@@ -1,0 +1,26 @@
+0      # [0] mode (normal)
+10     # [1] speed (placeholder, adjust if needed)
+0      # [2] gain (auto)
+12     # [3] brightness (0.12 -> 12)
+90     # [4] contrast (0.9 -> 90)
+0      # [5] unused
+10     # [6] red (placeholder, auto mode won’t use it)
+10     # [7] blue (placeholder, auto mode won’t use it)
+0      # [8] ev
+0      # [9] unused
+0      # [10] unused
+0      # [11] unused
+0      # [12] unused
+0      # [13] unused
+0      # [14] unused
+0      # [15] extn (0=jpg)
+0      # [16] unused
+0      # [17] unused
+0      # [18] unused
+10     # [19] saturation (1.0 -> 10)
+2      # [20] meter (average)
+1      # [21] awb (auto)
+15     # [22] sharpness (1.5 -> 15)
+1      # [23] denoise (cdn_off)
+93     # [24] quality
+
