@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App-wide dark background */
+html, body, #__next {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #1e1e1e !important;
+}
+
+body {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+/* Headings pop on dark */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Bigger glowing title */
+h1 {
+  font-weight: 800;
+  font-size: 80px;            /* text-6xl */
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Buttons readable on dark backgrounds */
+button {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ---------- GRID ---------- */
+
+.table-grid {
+  border-collapse: collapse;
+  background: transparent;
+}
+
+/* Keep axis labels readable */
+.table-grid td span,
+.table-grid th span {
+  color: #e5e7eb;             /* near-white */
+  background: transparent;
+}
+
+/* Allow Tailwind bg-* (robot/obstacle colors) to show on normal cells */
+.table-grid td:not(.axis):not([class*="bg-"]),
+.table-grid th:not(.axis):not([class*="bg-"]) {
+  background: transparent;
+  color: #e5e7eb;
+}
+
+/* Crisp grey borders on normal cells (but not red-highlighted ones) */
+.table-grid td:not(.axis):not([class*="border-l-4"]):not([class*="border-r-4"])
+            :not([class*="border-t-4"]):not([class*="border-b-4"]),
+.table-grid th:not(.axis) {
+  border: 1px solid #9ca3af;   /* gray-400 lines for visibility */
+}
+
+/* Remove all boxes/outlines from axis cells */
+.table-grid td.axis,
+.table-grid th.axis {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0;
+}
+
+/* Also ensure axis cell contents never draw a box */
+.table-grid td.axis > *,
+.table-grid th.axis > * {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* ---------- LIGHT CARD PANELS ---------- */
+
+.card-panel {
+  background-color: #f9fafb;   /* light gray card */
+  color: #111827;              /* dark text inside */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card-panel h2 {
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Ensure all text inside light cards is dark */
+.card-panel,
+.card-panel * {
+  color: #111827 !important;
+}
+
+/* Keep button text inside cards white for contrast */
+.card-panel .btn,
+.card-panel .btn-success,
+.card-panel .btn-warning,
+.card-panel .btn-error {
+  color: #ffffff !important;
+}
+
+/* If any bg-gray-50 cards are used, ensure text is dark */
+.bg-gray-50,
+.bg-gray-50 * {
+  color: #111827 !important;
+}
