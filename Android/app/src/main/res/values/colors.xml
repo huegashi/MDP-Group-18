@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#2C2F34</color>
+    <color name="white">#2C2F34</color>
+    <color name="message_utility_button_background">#F4F4F4</color>
+    <color name="background">#E3F2FD</color>
+    <color name="background_dark">#0D47A1</color>
+    <color name="button_background_color_red">#FFA0B1</color>
+    <color name="pink_500">#B8005C</color>
+    <color name="pink_700">#B646C0</color>
+    <color name="reset">#E97489</color>
+    <color name="preset">#E3F2FD</color>
+    <color name="map">#B3E5FC</color>
+    <color name="gridnumbers">#1565C0</color>
+    <color name="task">#0D47A1</color>
+    <color name="robot">#BBDEFB</color>
+    <color name="target">#64B5F6</color>
+</resources>
